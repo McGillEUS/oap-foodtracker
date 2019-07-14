@@ -1,0 +1,167 @@
+[
+    {
+        "full_name" : "Beef Burgers",
+        "name" : "beef",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 8,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Chicken Burgers",
+        "name" : "chicken",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 8,
+        "price" : 0.00,
+        "num_unused" : 0,
+        "num_used" : 2,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Veggie Burgers",
+        "name" : "veggie",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 4,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Hot Dog",
+        "name" : "hotdog",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 32,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Beyond Meat Burger",
+        "name" : "beyondmeat",
+        "supplier" : "McGill",
+        "quantity_per_pack" : 8,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Cheese",
+        "name" : "cheese",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 100,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Hot Dog Buns",
+        "name" : "hotdogbuns",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 24,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Burger Buns",
+        "name" : "burgerbuns",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 24,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Ketchup",
+        "name" : "ketchup",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 3,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Mustard",
+        "name" : "mustard",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 3,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    },
+    {
+        "full_name" : "Relish",
+        "name" : "relish",
+        "supplier" : "Provigo",
+        "quantity_per_pack" : 3,
+        "price" : 0.00,
+        "num_unused" : 1,
+        "num_used" : 0,
+        "history" : [
+            {
+                "date" : "2019-08-25 TODO NEW FORMAT",
+                "stock" : "200"
+            }
+        ]
+    }
+]

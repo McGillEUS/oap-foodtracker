@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Tracker</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/toastr.css">
+  <link rel="stylesheet" href="css/angular-date-picker.css">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+  <div class="container" ng-app="foodTracker" ng-controller="jsonGUIController">
+    <div class="row">
+      <div class="page-header">
+        <div class="span1">
+          <img src="img/frostbite_favicon.png">
+        </div>
+        <div class="span5">
+          <h1>OAP Food Tracker</h1>
+        </div>
+        <ol style="list-style-type: none;">
+          <li>
+            <div class="span3">
+              <button class="btn btn-success btn-small" ng-click="saveChanges()">
+                  <i class="icon-file icon-white"></i>Save Changes
+              </button>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <h2>Taking From Freezer? Click here!</h2>
+    <div class="row">
+      <ul style="list-style-type: none;">
+        <li ng-repeat="item in food">
+          <div class="span3">
+            <button class="btn btn-success btn-small" ng-click="take(item, 1, 'take')">
+                <i class="icon-file icon-white"></i>Take 1 {{ item.name }}
+            </button>
+          </div>
+          <div class="span3">
+            <button class="btn btn-warning btn-small" ng-click="take(item, 1, 'replace')">
+                <i class="icon-file icon-white"></i>Replace 1 {{ item.name }}
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Current Inventory (Packs)</h2>
+    <div class="row">
+      <table id="food-inventory" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Inventory</th>
+            <th>Used This Week</th>
+            <th>Used Today</th>
+            <th>Used in Last Hour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in food">
+            <td>{{ item.name }}</td>
+            <td>{{ item.history[item.history.length - 1].stock }}</td>
+            <td>{{ usedSince(item, startsOfTime().week) }}</td>
+            <td>{{ usedSince(item, startsOfTime().day) }}</td>
+            <td>{{ usedSince(item, startsOfTime().hour) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ol style="list-style-type: none;">
+        <li>
+          <div class="span3">
+            <input type="file" id="fileLoader" name="files" title="Load File" onchange="angular.element(this).scope().uploadFlavours()" />
+            <button class="btn btn-info btn-small" ng-click="openFile($filename)">
+                <i class="icon-file icon-white"></i> Load History
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="span3">
+            <button class="btn btn-info btn-small" ng-click="exportChanges($filename)" id="create">
+                <i class="icon-file icon-white"></i>Export History
+            </button>
+            <a href="" download="OAPhood.json" id="filedownload"></a>
+          </div>
+        </li>
+      </ol>
+  </div>
+  
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/toastr.min.js"></script>
+  <script src="lib/angular-date-picker.js"></script>
+  <script src="app/controllers.js"></script>
+
+</body>
+</html>
