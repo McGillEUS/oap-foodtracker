@@ -64,9 +64,9 @@
           <tr ng-repeat="item in food">
             <td>{{ item.name }}</td>
             <td>{{ item.history[item.history.length - 1].stock }}</td>
-            <td>{{ usedSince(item, startsOfTime().week) }}</td>
-            <td>{{ usedSince(item, startsOfTime().day) }}</td>
-            <td>{{ usedSince(item, startsOfTime().hour) }}</td>
+            <td>{{ usedSince(item, startsOfTime('week')) }}</td>
+            <td>{{ usedSince(item, startsOfTime('day')) }}</td>
+            <td>{{ usedSince(item, startsOfTime('hour')) }}</td>
           </tr>
         </tbody>
       </table>

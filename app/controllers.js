@@ -12,6 +12,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "200"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "180"
                 }
             ]
         },
@@ -23,8 +28,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "200"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "180"
                 }
             ]
         },
@@ -38,6 +48,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "200"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "180"
                 }
             ]
         },
@@ -49,8 +64,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "200"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "180"
                 }
             ]
         },
@@ -64,6 +84,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "200"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "180"
                 }
             ]
         },
@@ -75,8 +100,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "25"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "23"
                 }
             ]
         },
@@ -90,6 +120,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "50"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "48"
                 }
             ]
         },
@@ -101,8 +136,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "100"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "90"
                 }
             ]
         },
@@ -116,6 +156,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "10"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "9"
                 }
             ]
         },
@@ -127,8 +172,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "5"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "4"
                 }
             ]
         },
@@ -142,6 +192,11 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                     "date" : "2019-08-25T04:00:00.000Z",
                     "type" : "inventory",
                     "stock" : "4"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "3"
                 }
             ]
         },
@@ -153,8 +208,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "normal",
+                    "type" : "inventory",
                     "stock" : "3"
+                },
+                {
+                    "date" : "2019-08-25T13:00:00.000Z",
+                    "type" : "normal",
+                    "stock" : "2"
                 }
             ]
         }
@@ -187,11 +247,10 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         newEntry.date = new Date();
         
         if (action == "take") {
-            newEntry.stock = item.history[item.history.length - 1].stock - quantity;
+            newEntry.stock = parseInt(item.history[item.history.length - 1].stock) - quantity;
         } else if (action == "replace") {
-            newEntry.stock = item.history[item.history.length - 1].stock + quantity;
+            newEntry.stock = parseInt(item.history[item.history.length - 1].stock) + quantity;
         }
-        item.stock = newEntry.stock;
         item.history.push(newEntry);
     };
 
@@ -202,7 +261,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         } else {
             var entries = [];
             angular.forEach(item.history, function(checkpoint) {
-                if (checkpoint.date > date && checkpoint.type == "normal") {
+                var checkpointDate = new Date(checkpoint.date);
+                if (checkpointDate > date && checkpoint.type == "normal") {
                     // get list of all changes resulting from normal operations
                         // i.e. deliveries are not included
                         entries.push(checkpoint);
@@ -213,7 +273,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                 // no entries past the specified date
                 return result;
             } else {
-                return entries[entries.length - 1] - entries[0];
+                // return the overall change in the time frame
+                return entries[0].stock - entries[entries.length - 1].stock;
             }
         }
     };
@@ -276,33 +337,23 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         return now.getFullYear() + "-" + month + "-" + day;
     }
 
-    $scope.startsOfTime = function () {
-        var ret = {
-            "week" : "",
-            "day" : "",
-            "hour" : ""
-        };
-        ret.week = new Date();
-        ret.day = new Date();
-        ret.hour = new Date();
+    $scope.startsOfTime = function (timeline) {
+        var start = new Date();
+        if (timeline == "week") {
+            var day = start.getDay();
+            start.setDate(start.getDate() - day + (day == 0 ? -6:1));
+            start.setHours(0);
+        } else if (timeline == "day") {
+            start.setHours(0);
+        } else if (timeline == "hour") {
+            // no need to do anything
+        }
 
-        var day = ret.week.getDay();
-        ret.week.setDate(ret.week.getDate() - day + (day == 0 ? -6:1));
-        ret.week.setHours(0);
-        ret.week.setMinutes(0);
-        ret.week.setSeconds(0);
-        ret.week.setMilliseconds(0);
+        start.setMinutes(0);
+        start.setSeconds(0);
+        start.setMilliseconds(0);
 
-        ret.day.setHours(0);
-        ret.day.setMinutes(0);
-        ret.day.setSeconds(0);
-        ret.day.setMilliseconds(0);
-
-        ret.hour.setMinutes(0);
-        ret.hour.setSeconds(0);
-        ret.hour.setMilliseconds(0);
-
-        return ret;
+        return start;
     };
 
     /* DATE PICKER FUNCTIONS */
