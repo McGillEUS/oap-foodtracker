@@ -235,23 +235,34 @@ app.controller('jsonGUIController', function($scope, $timeout) {
 
     var clearAll = function() {
         $scope.editing = false;
+        $scope.staging = [];
+        angular.forEach($scope.food, function() {
+            $scope.staging.push(0);
+        });
     };
     clearAll();
 
-    $scope.take = function(item, quantity, action) {
+    $scope.stage = function(index, quantity, action) {
+        if (action == "take") {
+            $scope.staging[index] += quantity;
+        } else if (action == "replace") {
+            $scope.staging[index] -= quantity;
+        }
+    };
+
+    $scope.commitChanges = function() {
         var newEntry = {
             "date" : "",
             "type" : "normal",
             "stock" : ""
         };
         newEntry.date = new Date();
-        
-        if (action == "take") {
-            newEntry.stock = parseInt(item.history[item.history.length - 1].stock) - quantity;
-        } else if (action == "replace") {
+        var counter = 0;
+        angular.forEach($scope.staging, function(quantity) {
             newEntry.stock = parseInt(item.history[item.history.length - 1].stock) + quantity;
-        }
-        item.history.push(newEntry);
+            $scope.food[counter].history.push(newEntry);
+            counter++;
+        });
     };
 
     $scope.usedSince = function(item, date) {
