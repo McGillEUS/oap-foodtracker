@@ -10,7 +10,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "200"
                 },
                 {
@@ -28,7 +28,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "200"
                 },
                 {
@@ -46,7 +46,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "200"
                 },
                 {
@@ -64,7 +64,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "200"
                 },
                 {
@@ -82,7 +82,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "200"
                 },
                 {
@@ -100,7 +100,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "25"
                 },
                 {
@@ -118,7 +118,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "50"
                 },
                 {
@@ -136,7 +136,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "100"
                 },
                 {
@@ -154,7 +154,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "10"
                 },
                 {
@@ -172,7 +172,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "5"
                 },
                 {
@@ -190,7 +190,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "4"
                 },
                 {
@@ -208,7 +208,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "history" : [
                 {
                     "date" : "2019-08-25T04:00:00.000Z",
-                    "type" : "inventory",
+                    "type" : "delivery",
                     "stock" : "3"
                 },
                 {

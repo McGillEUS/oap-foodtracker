@@ -8,3 +8,43 @@
 .page-header {
     padding-bottom: 50px;
 }
+
+* {
+	box-sizing: border-box;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Create equal columns that float next to each other */
+.input-column {
+	float: left;
+	width: 20%;
+	padding: 10px;
+}
+/* As the screen shrinks, decrease the number of input columns per row */
+@media screen and (max-width: 1200px) {
+	.input-column {
+		width: 25%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.input-column {
+		width: 33%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.input-column {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 300px) {
+	.input-column {
+		width: 100%;
+	}
+}
+.input-column-item {
+	width: 100%;
+}

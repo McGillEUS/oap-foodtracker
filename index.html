@@ -32,20 +32,28 @@
 
     <h2>Taking From Freezer? Click here!</h2>
     <div class="row">
-      <ul style="list-style-type: none;">
-        <li ng-repeat="item in food">
-          <div class="span3">
-            <button class="btn btn-success btn-small" ng-click="take(item, 1, 'take')">
-                <i class="icon-file icon-white"></i>Take 1 {{ item.name }}
-            </button>
-          </div>
-          <div class="span3">
-            <button class="btn btn-warning btn-small" ng-click="take(item, 1, 'replace')">
-                <i class="icon-file icon-white"></i>Replace 1 {{ item.name }}
-            </button>
-          </div>
-        </li>
-      </ul>
+      <div class="input-column" ng-repeat="item in food">
+        <h4 style="text-align:center">{{ item.name }}</h4>
+        <button class="btn btn-success btn-small input-column-item" ng-click="take(item, {item.quantity_per_pack}, 'take')">
+            Take Pack
+        </button>
+        <button class="btn btn-success btn-small input-column-item" ng-click="take(item, 1, 'take')">
+            Take 1
+        </button>
+        <input class="input-column-item" model="" value="0">
+        <button class="btn btn-warning btn-small input-column-item" ng-click="take(item, 1, 'replace')">
+            Replace 1
+        </button>
+        <button class="btn btn-warning btn-small input-column-item" ng-click="take(item, {item.quantity_per_pack}, 'replace')">
+            Replace Pack
+        </button>
+      </div>
+      <div class="input-column">
+        <h4 style="color:white">Submit</h4>
+        <button class="btn btn-success input-column-item" style="height: 400%" ng-click="TODO">
+          Submit
+        </button>
+      </div>
     </div>
 
     <h2>Current Inventory (Packs)</h2>
