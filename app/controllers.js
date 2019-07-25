@@ -6,6 +6,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Beef Burgers",
             "supplier" : "Provigo",
             "quantity_per_pack" : 8,
+            "packs_per_cooler" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -24,6 +25,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Chicken Burgers",  
             "supplier" : "Provigo",
             "quantity_per_pack" : 8,
+            "packs_per_cooler" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -42,6 +44,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Veggie Burgers",
             "supplier" : "Provigo",
             "quantity_per_pack" : 4,
+            "packs_per_cooler" : 16,
             "price" : 0.00,
             "history" : [
                 {
@@ -59,7 +62,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         {
             "name" : "Hot Dog",
             "supplier" : "Provigo",
-            "quantity_per_pack" : 32,
+            "quantity_per_pack" : 39,
+            "packs_per_cooler" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -78,6 +82,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Beyond Meat Burger",
             "supplier" : "McGill",
             "quantity_per_pack" : 8,
+            "packs_per_cooler" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -96,6 +101,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Cheese",
             "supplier" : "Provigo",
             "quantity_per_pack" : 100,
+            "packs_per_cooler" : 10,
             "price" : 0.00,
             "history" : [
                 {
@@ -114,6 +120,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Hot Dog Buns",
             "supplier" : "Provigo",
             "quantity_per_pack" : 24,
+            "packs_per_cooler" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -132,6 +139,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Burger Buns",
             "supplier" : "Provigo",
             "quantity_per_pack" : 24,
+            "packs_per_cooler" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -150,6 +158,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Ketchup",
             "supplier" : "Provigo",
             "quantity_per_pack" : 3,
+            "packs_per_cooler" : 1,
             "price" : 0.00,
             "history" : [
                 {
@@ -168,6 +177,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "name" : "Mustard",
             "supplier" : "Provigo",
             "quantity_per_pack" : 3,
+            "packs_per_cooler" : 1,
             "price" : 0.00,
             "history" : [
                 {
@@ -185,7 +195,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         {
             "name" : "Mayo",
             "supplier" : "Provigo",
-            "quantity_per_pack" : 3,
+            "quantity_per_pack" : 1,
+            "packs_per_cooler" : 1,
             "price" : 0.00,
             "history" : [
                 {
@@ -203,7 +214,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         {
             "name" : "Relish",
             "supplier" : "Provigo",
-            "quantity_per_pack" : 3,
+            "quantity_per_pack" : 1,
+            "packs_per_cooler" : 1,
             "price" : 0.00,
             "history" : [
                 {
@@ -251,18 +263,19 @@ app.controller('jsonGUIController', function($scope, $timeout) {
     };
 
     $scope.commitChanges = function() {
-        var newEntry = {
-            "date" : "",
-            "type" : "normal",
-            "stock" : ""
-        };
-        newEntry.date = new Date();
+        var today = new Date();
         var counter = 0;
         angular.forEach($scope.staging, function(quantity) {
-            newEntry.stock = parseInt(item.history[item.history.length - 1].stock) + quantity;
+            var newEntry = {
+                "date" : today,
+                "type" : "normal",
+                "stock" : ""
+            };
+            newEntry.stock = parseInt($scope.food[counter].history[$scope.food[counter].history.length - 1].stock) - quantity;
             $scope.food[counter].history.push(newEntry);
             counter++;
         });
+        clearAll();
     };
 
     $scope.usedSince = function(item, date) {
