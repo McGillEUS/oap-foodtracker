@@ -25,24 +25,100 @@
 	padding: 10px;
 }
 /* As the screen shrinks, decrease the number of input columns per row */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 980px) {
+	.container {
+		width: 860px;
+	}
 	.input-column {
-		width: 25%;
+		width: 20%;	/* 5 columns */
+	}
+}
+@media screen and (max-width: 880px) {
+	.container {
+		width: 780px;
+	}
+	.input-column {
+		width: 25%;	/* 4 columns */
 	}
 }
 @media screen and (max-width: 800px) {
+	.container {
+		width: 700px;
+	}
 	.input-column {
-		width: 33%;
+		width: 25%;	/* 4 columns */
 	}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+	.container {
+		width: 620px;
+	}
 	.input-column {
-		width: 50%;
+		width: 25%;	/* 4 columns */
 	}
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 640px) {
+	.container {
+		width: 540px;
+	}
 	.input-column {
-		width: 100%;
+		width: 33.3%; /* 3 columns */
+	}
+}
+@media screen and (max-width: 560px) {
+	.container {
+		width: 460px;
+	}
+	.input-column {
+		width: 33.3%; /* 3 columns */
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		width: 380px;
+	}
+	.input-column {
+		width: 50%; /* 2 columns */
+	}
+}
+@media screen and (max-width: 400px) {
+	.container {
+		width: 300px;
+	}
+	.input-column {
+		width: 50%; /* 2 columns */
+	}
+}
+@media screen and (max-width: 320px) {
+	.container {
+		width: 220px;
+	}
+	.input-column {
+		width: 100%; /* 1 column */
+	}
+}
+@media screen and (max-width: 240px) {
+	.container {
+		width: 140px;
+	}
+	.input-column {
+		width: 100%; /* 1 column */
+	}
+}
+@media screen and (max-width: 160px) {
+	.container {
+		width: 60px;
+	}
+	.input-column {
+		width: 100%; /* 1 column */
+	}
+}
+@media screen and (max-width: 80px) {
+	.container {
+		width: 80px;
+	}
+	.input-column {
+		width: 100%; /* 1 column */
 	}
 }
 .input-column-item {
