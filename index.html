@@ -31,7 +31,6 @@
       </div>
     </div>
 
-    <h2>Taking From Freezer? Click here!</h2>
     <div class="row">
       <div class="input-column" ng-repeat="item in food">
         <h4 style="text-align:center">{{ item.name }}</h4>
@@ -51,10 +50,27 @@
       </div>
       <div class="input-column">
         <h4 style="color:white">Submit</h4>
-        <button class="btn btn-success input-column-item" style="height: 400%" ng-click="commitChanges()">
+        <button class="btn btn-success input-column-item" ng-click="commitChanges()">
           Submit
         </button>
       </div>
+      <div class="input-column">
+          <h4 style="color:white">Input Type</h4>
+          <form>
+              <label>
+                <input type="radio" ng-model="inputType" value="normal" ng-click="changeMode()">
+                Normal Operations
+              </label><br/>
+              <label>
+                <input type="radio" ng-model="inputType" value="delivery" ng-click="changeMode()">
+                Received Delivery
+              </label><br/>
+              <label>
+                <input type="radio" ng-model="inputType" value="inventory" ng-click="changeMode()">
+                Inventory Management
+              </label><br/>
+             </form>
+        </div>
     </div>
 
     <h2>Current Inventory (Packs)</h2>

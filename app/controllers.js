@@ -264,6 +264,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         angular.forEach($scope.food, function() {
             $scope.staging.push(0);
         });
+        $scope.inputType = "normal";
     };
     clearAll();
 
@@ -282,7 +283,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             if (quantity != 0) {
                 var newEntry = {
                     "date" : today,
-                    "type" : "normal",
+                    "type" : $scope.inputType,
                     "stock" : ""
                 };
                 newEntry.stock = parseInt($scope.food[counter].history[$scope.food[counter].history.length - 1].stock) - quantity;
