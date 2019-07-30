@@ -7,6 +7,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 8,
             "packs_per_cooler" : 12,
+            "packs_per_box" : 16,
             "price" : 0.00,
             "history" : [
                 {
@@ -26,6 +27,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 8,
             "packs_per_cooler" : 12,
+            "packs_per_box" : 16,
             "price" : 0.00,
             "history" : [
                 {
@@ -45,6 +47,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 4,
             "packs_per_cooler" : 16,
+            "packs_per_box" : 18,
             "price" : 0.00,
             "history" : [
                 {
@@ -64,6 +67,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 39,
             "packs_per_cooler" : 12,
+            "packs_per_box" : 6,
             "price" : 0.00,
             "history" : [
                 {
@@ -83,6 +87,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "McGill",
             "quantity_per_pack" : 8,
             "packs_per_cooler" : 12,
+            "packs_per_box" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -102,6 +107,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 100,
             "packs_per_cooler" : 10,
+            "packs_per_box" : 12,
             "price" : 0.00,
             "history" : [
                 {
@@ -121,6 +127,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 24,
             "packs_per_cooler" : 3,
+            "packs_per_box" : 10,
             "price" : 0.00,
             "history" : [
                 {
@@ -140,6 +147,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 24,
             "packs_per_cooler" : 3,
+            "packs_per_box" : 10,
             "price" : 0.00,
             "history" : [
                 {
@@ -159,6 +167,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 3,
             "packs_per_cooler" : 1,
+            "packs_per_box" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -178,6 +187,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 3,
             "packs_per_cooler" : 1,
+            "packs_per_box" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -197,6 +207,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 1,
             "packs_per_cooler" : 1,
+            "packs_per_box" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -216,6 +227,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             "supplier" : "Provigo",
             "quantity_per_pack" : 1,
             "packs_per_cooler" : 1,
+            "packs_per_box" : 3,
             "price" : 0.00,
             "history" : [
                 {
@@ -281,6 +293,10 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         var counter = 0;
         angular.forEach($scope.staging, function(quantity) {
             if (quantity != 0) {
+                if ($scope.inputType == "delivery") {
+                    // when we have a delivery, the "take" buttons change to "receive" buttons, so reverse the quantity
+                    quantity = -quantity;
+                }
                 var newEntry = {
                     "date" : today,
                     "type" : $scope.inputType,

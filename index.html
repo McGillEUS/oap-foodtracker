@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Food Tracker</title>
+  <title>OAPhood Tracker</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/toastr.css">
@@ -34,18 +34,27 @@
     <div class="row">
       <div class="input-column" ng-repeat="item in food">
         <h4 style="text-align:center">{{ item.name }}</h4>
-        <button class="btn btn-success btn-small input-column-item" ng-click="stage($index, item.packs_per_cooler, 'take')">
-          Take Cooler ({{ item.packs_per_cooler }})
+        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='delivery'||inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'take')">
+          Receive Full Box ({{ item.packs_per_box }})
         </button>
-        <button class="btn btn-success btn-small input-column-item" ng-click="stage($index, 1, 'take')">
-          Take 1
+        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='delivery'" ng-click="stage($index, 1, 'take')">
+          Receive 1 Pack
+        </button>
+        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'take')">
+          Take Full Cooler ({{ item.packs_per_cooler }})
+        </button>
+        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, 1, 'take')">
+          Take 1 Pack
         </button>
         <input class="input-column-item" ng-model="staging[$index]" value="0">
-        <button class="btn btn-warning btn-small input-column-item" ng-click="stage($index, 1, 'replace')">
-          Replace 1
+        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, 1, 'replace')">
+          Replace 1 Pack
         </button>
-        <button class="btn btn-warning btn-small input-column-item" ng-click="stage($index, item.packs_per_cooler, 'replace')">
+        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'replace')">
           Replace Cooler ({{ item.packs_per_cooler }})
+        </button>
+        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'replace')">
+          Replace Full Box ({{ item.packs_per_box }})
         </button>
       </div>
       <div class="input-column">
@@ -58,15 +67,15 @@
           <h4 style="color:white">Input Type</h4>
           <form>
               <label>
-                <input type="radio" ng-model="inputType" value="normal" ng-click="changeMode()">
+                <input type="radio" ng-model="inputType" value="normal">
                 Normal Operations
               </label><br/>
               <label>
-                <input type="radio" ng-model="inputType" value="delivery" ng-click="changeMode()">
+                <input type="radio" ng-model="inputType" value="delivery">
                 Received Delivery
               </label><br/>
               <label>
-                <input type="radio" ng-model="inputType" value="inventory" ng-click="changeMode()">
+                <input type="radio" ng-model="inputType" value="inventory">
                 Inventory Management
               </label><br/>
              </form>
