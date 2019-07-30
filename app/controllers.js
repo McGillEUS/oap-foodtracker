@@ -266,13 +266,15 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         var today = new Date();
         var counter = 0;
         angular.forEach($scope.staging, function(quantity) {
-            var newEntry = {
-                "date" : today,
-                "type" : "normal",
-                "stock" : ""
-            };
-            newEntry.stock = parseInt($scope.food[counter].history[$scope.food[counter].history.length - 1].stock) - quantity;
-            $scope.food[counter].history.push(newEntry);
+            if (quantity != 0) {
+                var newEntry = {
+                    "date" : today,
+                    "type" : "normal",
+                    "stock" : ""
+                };
+                newEntry.stock = parseInt($scope.food[counter].history[$scope.food[counter].history.length - 1].stock) - quantity;
+                $scope.food[counter].history.push(newEntry);
+            }
             counter++;
         });
         clearAll();
