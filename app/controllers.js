@@ -236,7 +236,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         $.ajax({
             'async': false,
             'global': false,
-            'url': "data/food.json",
+            'url': "data/OAPhood.json",
             'dataType': "json",
             'success': function (data) {
                 $scope.food = data;
@@ -244,6 +244,19 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         });
     };
     loadData();
+
+    // save changes to JSON file
+    var saveData = function() {
+        $.ajax({ 
+            'url' : 'app/saveData.php',
+            'data' : {'data' : JSON.stringify($scope.food)},
+            'type' : 'POST',
+            'dataType' : 'json',
+            'success' : function() {
+            }
+        });
+        toastr.success("Changes saved.");
+    };
 
     var clearAll = function() {
         $scope.editing = false;
@@ -278,6 +291,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             counter++;
         });
         clearAll();
+        saveData();
     };
 
     $scope.usedSince = function(item, date) {
@@ -329,20 +343,6 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         $timeout(function() {
             downloadLink.click(); // performs click to start download
         }, 100);
-    };
-
-    // save changes to JSON file
-    $scope.saveChanges = function() {
-
-        $.ajax({ 
-            'url' : 'app/saveChanges.php',
-            'data' : {'data' : JSON.stringify($scope.food)},
-            'type' : 'POST',
-            'dataType' : 'json',
-            'success' : function() {
-            }
-        });
-        toastr.success("Chagnes saved.");
     };
 
     $scope.openFile = function() {

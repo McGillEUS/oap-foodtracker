@@ -21,9 +21,10 @@
         <ol style="list-style-type: none;">
           <li>
             <div class="span3">
-              <button class="btn btn-success btn-small" ng-click="saveChanges()">
-                  <i class="icon-file icon-white"></i>Save Changes
+              <button class="btn btn-info btn-small" ng-click="exportChanges($filename)" id="create">
+                <i class="icon-file icon-white"></i>Export History
               </button>
+              <a href="" download="OAPhood.json" id="filedownload"></a>
             </div>
           </li>
         </ol>
@@ -79,25 +80,6 @@
         </tbody>
       </table>
     </div>
-
-    <ol style="list-style-type: none;">
-        <li>
-          <div class="span3">
-            <input type="file" id="fileLoader" name="files" title="Load File" onchange="angular.element(this).scope().uploadFlavours()" />
-            <button class="btn btn-info btn-small" ng-click="openFile($filename)">
-                <i class="icon-file icon-white"></i> Load History
-            </button>
-          </div>
-        </li>
-        <li>
-          <div class="span3">
-            <button class="btn btn-info btn-small" ng-click="exportChanges($filename)" id="create">
-                <i class="icon-file icon-white"></i>Export History
-            </button>
-            <a href="" download="OAPhood.json" id="filedownload"></a>
-          </div>
-        </li>
-      </ol>
   </div>
   
   <script src="lib/jquery.min.js"></script>
