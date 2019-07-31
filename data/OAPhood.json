@@ -1,242 +1,259 @@
 [
     {
-        "name" : "Beef Burgers",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 8,
-        "packs_per_cooler" : 12,
-        "packs_per_box" : 16,
-        "price" : 0.00,
-        "history" : [
+        "name": "Beef Burgers",
+        "supplier": "Provigo",
+        "quantity_per_pack": 8,
+        "packs_per_cooler": 12,
+        "packs_per_box": 16,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "200"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "200"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "180"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "180"
+            },
+            {
+                "date": "2019-07-31T20:15:06.205Z",
+                "type": "normal",
+                "stock": 170
             }
-        ]
+        ],
+        "$$hashKey": "object:6"
     },
     {
-        "name" : "Chicken Burgers",  
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 8,
-        "packs_per_cooler" : 12,
-        "packs_per_box" : 16,
-        "price" : 0.00,
-        "history" : [
+        "name": "Chicken Burgers",
+        "supplier": "Provigo",
+        "quantity_per_pack": 8,
+        "packs_per_cooler": 12,
+        "packs_per_box": 16,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "200"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "200"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "180"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "180"
             }
-        ]
+        ],
+        "$$hashKey": "object:7"
     },
     {
-        "name" : "Veggie Burgers",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 4,
-        "packs_per_cooler" : 16,
-        "packs_per_box" : 18,
-        "price" : 0.00,
-        "history" : [
+        "name": "Veggie Burgers",
+        "supplier": "Provigo",
+        "quantity_per_pack": 4,
+        "packs_per_cooler": 16,
+        "packs_per_box": 18,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "200"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "200"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "180"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "180"
             }
-        ]
+        ],
+        "$$hashKey": "object:8"
     },
     {
-        "name" : "Hot Dog",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 39,
-        "packs_per_cooler" : 12,
-        "packs_per_box" : 6,
-        "price" : 0.00,
-        "history" : [
+        "name": "Hot Dog",
+        "supplier": "Provigo",
+        "quantity_per_pack": 39,
+        "packs_per_cooler": 12,
+        "packs_per_box": 6,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "200"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "200"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "180"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "180"
             }
-        ]
+        ],
+        "$$hashKey": "object:9"
     },
     {
-        "name" : "Beyond Meat Burger",
-        "supplier" : "McGill",
-        "quantity_per_pack" : 8,
-        "packs_per_cooler" : 12,
-        "packs_per_box" : 12,
-        "price" : 0.00,
-        "history" : [
+        "name": "Beyond Meat Burger",
+        "supplier": "McGill",
+        "quantity_per_pack": 8,
+        "packs_per_cooler": 12,
+        "packs_per_box": 12,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "200"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "200"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "180"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "180"
             }
-        ]
+        ],
+        "$$hashKey": "object:10"
     },
     {
-        "name" : "Cheese",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 100,
-        "packs_per_cooler" : 10,
-        "packs_per_box" : 12,
-        "price" : 0.00,
-        "history" : [
+        "name": "Cheese",
+        "supplier": "Provigo",
+        "quantity_per_pack": 100,
+        "packs_per_cooler": 10,
+        "packs_per_box": 12,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "25"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "25"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "23"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "23"
             }
-        ]
+        ],
+        "$$hashKey": "object:11"
     },
     {
-        "name" : "Hot Dog Buns",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 24,
-        "packs_per_cooler" : 3,
-        "packs_per_box" : 10,
-        "price" : 0.00,
-        "history" : [
+        "name": "Hot Dog Buns",
+        "supplier": "Provigo",
+        "quantity_per_pack": 24,
+        "packs_per_cooler": 3,
+        "packs_per_box": 10,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "50"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "50"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "48"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "48"
             }
-        ]
+        ],
+        "$$hashKey": "object:12"
     },
     {
-        "name" : "Burger Buns",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 24,
-        "packs_per_cooler" : 3,
-        "packs_per_box" : 10,
-        "price" : 0.00,
-        "history" : [
+        "name": "Burger Buns",
+        "supplier": "Provigo",
+        "quantity_per_pack": 24,
+        "packs_per_cooler": 3,
+        "packs_per_box": 10,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "100"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "100"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "90"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "90"
             }
-        ]
+        ],
+        "$$hashKey": "object:13"
     },
     {
-        "name" : "Ketchup",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 3,
-        "packs_per_cooler" : 1,
-        "packs_per_box" : 3,
-        "price" : 0.00,
-        "history" : [
+        "name": "Ketchup",
+        "supplier": "Provigo",
+        "quantity_per_pack": 3,
+        "packs_per_cooler": 1,
+        "packs_per_box": 3,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "10"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "10"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "9"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "9"
             }
-        ]
+        ],
+        "$$hashKey": "object:14"
     },
     {
-        "name" : "Mustard",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 3,
-        "packs_per_cooler" : 1,
-        "packs_per_box" : 3,
-        "price" : 0.00,
-        "history" : [
+        "name": "Mustard",
+        "supplier": "Provigo",
+        "quantity_per_pack": 3,
+        "packs_per_cooler": 1,
+        "packs_per_box": 3,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "5"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "5"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "4"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "4"
             }
-        ]
+        ],
+        "$$hashKey": "object:15"
     },
     {
-        "name" : "Mayo",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 1,
-        "packs_per_cooler" : 1,
-        "packs_per_box" : 3,
-        "price" : 0.00,
-        "history" : [
+        "name": "Mayo",
+        "supplier": "Provigo",
+        "quantity_per_pack": 1,
+        "packs_per_cooler": 1,
+        "packs_per_box": 3,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "4"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "4"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "3"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "3"
             }
-        ]
+        ],
+        "$$hashKey": "object:16"
     },
     {
-        "name" : "Relish",
-        "supplier" : "Provigo",
-        "quantity_per_pack" : 1,
-        "packs_per_cooler" : 1,
-        "packs_per_box" : 3,
-        "price" : 0.00,
-        "history" : [
+        "name": "Relish",
+        "supplier": "Provigo",
+        "quantity_per_pack": 1,
+        "packs_per_cooler": 1,
+        "packs_per_box": 3,
+        "price": 0,
+        "history": [
             {
-                "date" : "2019-08-25T04:00:00.000Z",
-                "type" : "delivery",
-                "stock" : "3"
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "3"
             },
             {
-                "date" : "2019-08-25T13:00:00.000Z",
-                "type" : "normal",
-                "stock" : "2"
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "2"
             }
-        ]
+        ],
+        "$$hashKey": "object:17"
     }
 ]
