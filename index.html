@@ -65,25 +65,19 @@
       </button>
     </div>
 
-    <h2>Current Inventory (Packs)</h2>
+    <h2>Change History</h2>
     <div class="row">
       <table id="food-inventory" class="table table-striped">
         <thead>
           <tr>
-            <th>Item</th>
-            <th>Inventory</th>
-            <th>Used This Week</th>
-            <th>Used Today</th>
-            <th>Used in Last Hour</th>
+            <th>Timestamp</th>
+            <th ng-repeat="item in food" ng-show="item.volunteer_page==1">{{ item.name }}</th>
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="item in food">
-            <td>{{ item.name }}</td>
-            <td>{{ item.history[item.history.length - 1].stock }}</td>
-            <td>{{ usedSince(item, startsOfTime('week')) }}</td>
-            <td>{{ usedSince(item, startsOfTime('day')) }}</td>
-            <td>{{ usedSince(item, startsOfTime('hour')) }}</td>
+          <tr ng-repeat="entry in changelog | orderBy: '-'">
+            <td>{{ entry.timestamp }}</td>
+            <td ng-repeat="change in entry.data" ng-show="change.item.volunteer_page==1">{{ change.change }}</td>
           </tr>
         </tbody>
       </table>

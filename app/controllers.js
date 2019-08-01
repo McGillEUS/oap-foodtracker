@@ -2,49 +2,27 @@ var app = angular.module('foodTracker', [ 'mp.datePicker' ]);
 app.controller('jsonGUIController', function($scope, $timeout) {
 
     $scope.food = [
-
         {
-
             "name" : "Placeholder",
-
             "supplier" : "Provigo",
-
             "quantity_per_pack" : 8,
-
             "packs_per_cooler" : 12,
-
             "packs_per_box" : 16,
-
             "price" : 0.00,
-
             "volunteer_page": 0,
-
             "history" : [
-
                 {
-
                     "date" : "2019-08-25T04:00:00.000Z",
-
                     "type" : "delivery",
-
                     "stock" : "200"
-
                 },
-
                 {
-
                     "date" : "2019-08-25T13:00:00.000Z",
-
                     "type" : "normal",
-
                     "stock" : "180"
-
                 }
-
             ]
-
         }
-
     ];
 
     var loadData = function() {
@@ -56,6 +34,18 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             'success': function (data) {
                 $scope.food = data;
                 toastr.success("Loaded food history.");
+            }
+        });
+
+        $scope.changelog = [];  // backup blank slate in case loading doesn't work
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "data/changelog.json",
+            'dataType': "json",
+            'success': function (data) {
+                $scope.changelog = data;
+                toastr.success("Loaded changelog.");
             }
         });
     };
@@ -71,6 +61,16 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             'success' : function() {
             }
         });
+
+        $.ajax({ 
+            'url' : 'app/saveChangelog.php',
+            'data' : {'data' : JSON.stringify($scope.changelog)},
+            'type' : 'POST',
+            'dataType' : 'json',
+            'success' : function() {
+            }
+        });
+
         toastr.success("Changes saved.");
     };
 
@@ -95,12 +95,23 @@ app.controller('jsonGUIController', function($scope, $timeout) {
     $scope.commitChanges = function() {
         var today = new Date();
         var counter = 0;
+        var changeLogEntry = {
+            "timestamp" : today.toLocaleString(),
+            "data" : []
+        };
         angular.forEach($scope.staging, function(quantity) {
+            var changeLogEntryData = {
+                "item" : $scope.food[counter],
+                "change" : 0
+            };
             if (quantity != 0) {
                 if ($scope.inputType == "delivery") {
                     // when we have a delivery, the "take" buttons change to "receive" buttons, so reverse the quantity
                     quantity = -quantity;
                 }
+
+                changeLogEntryData.change = -quantity;   // reverse the quantity to show the direction of change
+
                 var newEntry = {
                     "date" : today,
                     "type" : $scope.inputType,
@@ -110,7 +121,9 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                 $scope.food[counter].history.push(newEntry);
             }
             counter++;
+            changeLogEntry.data.push(changeLogEntryData);
         });
+        $scope.changelog.push(changeLogEntry);
         clearAll();
         saveData();
     };
