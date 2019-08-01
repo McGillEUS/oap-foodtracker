@@ -1,11 +1,12 @@
 [
     {
-        "name": "Beef Burgers",
+        "name": "Beef Burger",
         "supplier": "Provigo",
         "quantity_per_pack": 8,
         "packs_per_cooler": 12,
         "packs_per_box": 16,
         "price": 0,
+        "volunteer_page": 1,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -26,12 +27,13 @@
         "$$hashKey": "object:6"
     },
     {
-        "name": "Chicken Burgers",
+        "name": "Chicken Burger",
         "supplier": "Provigo",
         "quantity_per_pack": 8,
         "packs_per_cooler": 12,
         "packs_per_box": 16,
         "price": 0,
+        "volunteer_page": 1,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -47,12 +49,13 @@
         "$$hashKey": "object:7"
     },
     {
-        "name": "Veggie Burgers",
+        "name": "Veggie Burger",
         "supplier": "Provigo",
         "quantity_per_pack": 4,
         "packs_per_cooler": 16,
         "packs_per_box": 18,
         "price": 0,
+        "volunteer_page": 1,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -74,6 +77,7 @@
         "packs_per_cooler": 12,
         "packs_per_box": 6,
         "price": 0,
+        "volunteer_page": 1,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -95,6 +99,7 @@
         "packs_per_cooler": 12,
         "packs_per_box": 12,
         "price": 0,
+        "volunteer_page": 1,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -116,6 +121,7 @@
         "packs_per_cooler": 10,
         "packs_per_box": 12,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -131,12 +137,13 @@
         "$$hashKey": "object:11"
     },
     {
-        "name": "Hot Dog Buns",
+        "name": "Hot Dog Bun",
         "supplier": "Provigo",
         "quantity_per_pack": 24,
         "packs_per_cooler": 3,
         "packs_per_box": 10,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -152,12 +159,13 @@
         "$$hashKey": "object:12"
     },
     {
-        "name": "Burger Buns",
+        "name": "Burger Bun",
         "supplier": "Provigo",
         "quantity_per_pack": 24,
         "packs_per_cooler": 3,
         "packs_per_box": 10,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -179,6 +187,7 @@
         "packs_per_cooler": 1,
         "packs_per_box": 3,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -200,6 +209,7 @@
         "packs_per_cooler": 1,
         "packs_per_box": 3,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -221,6 +231,7 @@
         "packs_per_cooler": 1,
         "packs_per_box": 3,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -242,6 +253,7 @@
         "packs_per_cooler": 1,
         "packs_per_box": 3,
         "price": 0,
+        "volunteer_page": 0,
         "history": [
             {
                 "date": "2019-08-25T04:00:00.000Z",
@@ -255,5 +267,27 @@
             }
         ],
         "$$hashKey": "object:17"
+    },
+    {
+        "name": "Charcoal",
+        "supplier": "Provigo",
+        "quantity_per_pack": 1,
+        "packs_per_cooler": 1,
+        "packs_per_box": 1,
+        "price": 0,
+        "volunteer_page": 0,
+        "history": [
+            {
+                "date": "2019-08-25T04:00:00.000Z",
+                "type": "delivery",
+                "stock": "3"
+            },
+            {
+                "date": "2019-08-25T13:00:00.000Z",
+                "type": "normal",
+                "stock": "2"
+            }
+        ],
+        "$$hashKey": "object:18"
     }
 ]

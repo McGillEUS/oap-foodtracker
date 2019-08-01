@@ -2,26 +2,49 @@ var app = angular.module('foodTracker', [ 'mp.datePicker' ]);
 app.controller('jsonGUIController', function($scope, $timeout) {
 
     $scope.food = [
+
         {
+
             "name" : "Placeholder",
+
             "supplier" : "Provigo",
+
             "quantity_per_pack" : 8,
+
             "packs_per_cooler" : 12,
+
             "packs_per_box" : 16,
+
             "price" : 0.00,
+
+            "volunteer_page": 0,
+
             "history" : [
+
                 {
+
                     "date" : "2019-08-25T04:00:00.000Z",
+
                     "type" : "delivery",
+
                     "stock" : "200"
+
                 },
+
                 {
+
                     "date" : "2019-08-25T13:00:00.000Z",
+
                     "type" : "normal",
+
                     "stock" : "180"
+
                 }
+
             ]
+
         }
+
     ];
 
     var loadData = function() {
