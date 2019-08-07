@@ -49,7 +49,6 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             }
         });
     };
-    loadData();
 
     // save changes to JSON file
     var saveData = function() {
@@ -81,6 +80,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             $scope.staging.push(0);
         });
         $scope.inputType = "normal";
+        loadData();
     };
     clearAll();
 
@@ -124,8 +124,8 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             changeLogEntry.data.push(changeLogEntryData);
         });
         $scope.changelog.push(changeLogEntry);
-        clearAll();
         saveData();
+        clearAll();
     };
 
     $scope.usedSince = function(item, date) {
