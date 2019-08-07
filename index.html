@@ -21,10 +21,11 @@
         <ol style="list-style-type: none; float: right;">
           <li>
             <div class="span3">
-              <button class="btn btn-info btn-small" ng-click="exportChanges($filename)" id="create">
-                <i class="icon-file icon-white"></i>Export History
-              </button>
-              <a href="" download="OAPhood.json" id="filedownload"></a>
+              <a href="managers/index.html">
+                <button class="btn btn-info btn-large" id="managerpage">
+                  <i class="icon-cog icon-white"></i>Managers
+                </button>
+              </a>
             </div>
           </li>
         </ol>
@@ -32,75 +33,51 @@
     </div>
 
     <div class="row">
-      <div class="input-column" ng-repeat="item in food">
+      <div class="input-column" ng-repeat="item in food" ng-show="item.volunteer_page==1">
         <h4 style="text-align:center">{{ item.name }}</h4>
-        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='delivery'||inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'take')">
+        <button class="btn btn-success btn-medium input-column-item" ng-show="inputType=='delivery'||inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'take')">
           Receive Full Box ({{ item.packs_per_box }})
         </button>
-        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='delivery'" ng-click="stage($index, 1, 'take')">
+        <button class="btn btn-success btn-medium input-column-item" ng-show="inputType=='delivery'" ng-click="stage($index, 1, 'take')">
           Receive 1 Pack
         </button>
-        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'take')">
+        <button class="btn btn-success btn-medium input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'take')">
           Take Full Cooler ({{ item.packs_per_cooler }})
         </button>
-        <button class="btn btn-success btn-small input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, 1, 'take')">
+        <button class="btn btn-success btn-medium input-column-item" ng-show="inputType=='normal'||inputType=='inventory'" ng-click="stage($index, 1, 'take')">
           Take 1 Pack
         </button>
         <input class="input-column-item" ng-model="staging[$index]" value="0">
-        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, 1, 'replace')">
+        <button class="btn btn-warning btn-medium input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, 1, 'replace')">
           Replace 1 Pack
         </button>
-        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'replace')">
+        <button class="btn btn-warning btn-medium input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_cooler, 'replace')">
           Replace Cooler ({{ item.packs_per_cooler }})
         </button>
-        <button class="btn btn-warning btn-small input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'replace')">
+        <button class="btn btn-warning btn-medium input-column-item" ng-show="inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'replace')">
           Replace Full Box ({{ item.packs_per_box }})
         </button>
       </div>
-      <div class="input-column">
-        <h4 style="color:white">Submit</h4>
-        <button class="btn btn-success input-column-item" ng-click="commitChanges()">
-          Submit
-        </button>
-      </div>
-      <div class="input-column">
-          <h4 style="color:white">Input Type</h4>
-          <form>
-              <label>
-                <input type="radio" ng-model="inputType" value="normal">
-                Normal Operations
-              </label><br/>
-              <label>
-                <input type="radio" ng-model="inputType" value="delivery">
-                Received Delivery
-              </label><br/>
-              <label>
-                <input type="radio" ng-model="inputType" value="inventory">
-                Inventory Management
-              </label><br/>
-             </form>
-        </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-success submit-button" ng-click="commitChanges()">
+        Submit
+      </button>
     </div>
 
-    <h2>Current Inventory (Packs)</h2>
+    <h2>Change History</h2>
     <div class="row">
       <table id="food-inventory" class="table table-striped">
         <thead>
           <tr>
-            <th>Item</th>
-            <th>Inventory</th>
-            <th>Used This Week</th>
-            <th>Used Today</th>
-            <th>Used in Last Hour</th>
+            <th>Timestamp</th>
+            <th ng-repeat="item in food" ng-show="item.volunteer_page==1">{{ item.name }}</th>
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="item in food">
-            <td>{{ item.name }}</td>
-            <td>{{ item.history[item.history.length - 1].stock }}</td>
-            <td>{{ usedSince(item, startsOfTime('week')) }}</td>
-            <td>{{ usedSince(item, startsOfTime('day')) }}</td>
-            <td>{{ usedSince(item, startsOfTime('hour')) }}</td>
+          <tr ng-repeat="entry in changelog | orderBy: '-'">
+            <td>{{ entry.timestamp }}</td>
+            <td ng-repeat="change in entry.data" ng-show="change.item.volunteer_page==1">{{ change.change }}</td>
           </tr>
         </tbody>
       </table>
