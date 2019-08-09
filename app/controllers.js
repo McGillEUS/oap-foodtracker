@@ -74,13 +74,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
     };
 
     var clearAll = function() {
+        loadData();
         $scope.editing = false;
         $scope.staging = [];
         angular.forEach($scope.food, function() {
             $scope.staging.push(0);
         });
         $scope.inputType = "normal";
-        loadData();
     };
     clearAll();
 
