@@ -33,7 +33,6 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             'dataType': "json",
             'success': function (data) {
                 $scope.food = data;
-                toastr.success("Loaded food history.");
             }
         });
 
@@ -45,13 +44,13 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             'dataType': "json",
             'success': function (data) {
                 $scope.changelog = data;
-                toastr.success("Loaded changelog.");
             }
         });
     };
+    loadData();
 
     // save changes to JSON file
-    var saveData = function() {
+    $scope.saveData = function() {
         $.ajax({ 
             'url' : 'app/saveData.php',
             'data' : {'data' : JSON.stringify($scope.food)},
@@ -74,7 +73,6 @@ app.controller('jsonGUIController', function($scope, $timeout) {
     };
 
     var clearAll = function() {
-        loadData();
         $scope.editing = false;
         $scope.staging = [];
         angular.forEach($scope.food, function() {
@@ -124,7 +122,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             changeLogEntry.data.push(changeLogEntryData);
         });
         $scope.changelog.push(changeLogEntry);
-        saveData();
+        $scope.saveData();
         clearAll();
     };
 

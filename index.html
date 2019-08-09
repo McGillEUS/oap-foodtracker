@@ -21,7 +21,7 @@
         <ol style="list-style-type: none; float: right;">
           <li>
             <div class="span3">
-              <a href="managers.html">
+              <a ng-click="saveData()" href="managers.html">
                 <button class="btn btn-info btn-large" id="managerpage">
                   <i class="icon-cog icon-white"></i>Managers
                 </button>
@@ -75,7 +75,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="entry in changelog | orderBy: '-'">
+          <tr ng-repeat="entry in changelog | orderBy: '-' | limitTo: 10">
             <td>{{ entry.timestamp }}</td>
             <td ng-repeat="change in entry.data" ng-show="change.item.volunteer_page==1">{{ change.change }}</td>
           </tr>
