@@ -211,6 +211,10 @@ app.controller('jsonGUIController', function($scope, $timeout) {
         start.setSeconds(0);
         start.setMilliseconds(0);
 
+        if (timeline == "oap") {
+            start = new Date('2019-08-26T12:00:00');
+        }
+
         return start;
     };
 

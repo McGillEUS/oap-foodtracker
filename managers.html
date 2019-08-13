@@ -97,18 +97,21 @@
           <tr>
             <th>Item</th>
             <th>Inventory</th>
-            <th>Used This Week</th>
-            <th>Used Today</th>
             <th>Used in Last Hour</th>
+            <th>Used Today</th>
+            <th>Used this Week</th>
+            <th>Used this OAP</th>
           </tr>
         </thead>
         <tbody>
           <tr ng-repeat="item in food">
             <td>{{ item.name }}</td>
             <td>{{ item.history[item.history.length - 1].stock }}</td>
-            <td>{{ usedSince(item, startsOfTime('week')) }}</td>
-            <td>{{ usedSince(item, startsOfTime('day')) }}</td>
             <td>{{ usedSince(item, startsOfTime('hour')) }}</td>
+            <td>{{ usedSince(item, startsOfTime('day')) }}</td>
+            <td>{{ usedSince(item, startsOfTime('week')) }}</td>
+            <td>{{ usedSince(item, startsOfTime('oap'))}}</td>
+            <!-- Each OAP, need to update the hardcoded value for "oap" in startsOfTime()-->
           </tr>
         </tbody>
       </table>
