@@ -1,1 +1,1101 @@
-[]
+[
+    {
+        "timestamp": "8\/19\/2019, 10:54:32 AM",
+        "data": [
+            {
+                "item": {
+                    "name": "Beef Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-07-31T20:15:06.205Z",
+                            "type": "normal",
+                            "stock": 170
+                        },
+                        {
+                            "date": "2019-08-01T13:58:22.499Z",
+                            "type": "normal",
+                            "stock": 169
+                        }
+                    ],
+                    "$$hashKey": "object:6"
+                },
+                "change": 0,
+                "$$hashKey": "object:31"
+            },
+            {
+                "item": {
+                    "name": "Chicken Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 168
+                        },
+                        {
+                            "date": "2019-08-19T14:54:34.603Z",
+                            "type": "normal",
+                            "stock": 167
+                        }
+                    ],
+                    "$$hashKey": "object:7"
+                },
+                "change": 0,
+                "$$hashKey": "object:32"
+            },
+            {
+                "item": {
+                    "name": "Veggie Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 4,
+                    "packs_per_cooler": 16,
+                    "packs_per_box": 18,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 164
+                        }
+                    ],
+                    "$$hashKey": "object:8"
+                },
+                "change": 0,
+                "$$hashKey": "object:33"
+            },
+            {
+                "item": {
+                    "name": "Hot Dog",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 39,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 6,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-19T14:54:32.944Z",
+                            "type": "normal",
+                            "stock": 168
+                        }
+                    ],
+                    "$$hashKey": "object:9"
+                },
+                "change": -12,
+                "$$hashKey": "object:34"
+            },
+            {
+                "item": {
+                    "name": "Beyond Meat Burger",
+                    "supplier": "McGill",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        }
+                    ],
+                    "$$hashKey": "object:10"
+                },
+                "change": 0,
+                "$$hashKey": "object:35"
+            },
+            {
+                "item": {
+                    "name": "Cheese",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 100,
+                    "packs_per_cooler": 10,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "25"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "23"
+                        }
+                    ],
+                    "$$hashKey": "object:11"
+                },
+                "change": 0,
+                "$$hashKey": "object:36"
+            },
+            {
+                "item": {
+                    "name": "Hot Dog Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "50"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "48"
+                        }
+                    ],
+                    "$$hashKey": "object:12"
+                },
+                "change": 0,
+                "$$hashKey": "object:37"
+            },
+            {
+                "item": {
+                    "name": "Burger Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "100"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "90"
+                        }
+                    ],
+                    "$$hashKey": "object:13"
+                },
+                "change": 0,
+                "$$hashKey": "object:38"
+            },
+            {
+                "item": {
+                    "name": "Ketchup",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "10"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "9"
+                        }
+                    ],
+                    "$$hashKey": "object:14"
+                },
+                "change": 0,
+                "$$hashKey": "object:39"
+            },
+            {
+                "item": {
+                    "name": "Mustard",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "5"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "4"
+                        }
+                    ],
+                    "$$hashKey": "object:15"
+                },
+                "change": 0,
+                "$$hashKey": "object:40"
+            },
+            {
+                "item": {
+                    "name": "Mayo",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "4"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "3"
+                        }
+                    ],
+                    "$$hashKey": "object:16"
+                },
+                "change": 0,
+                "$$hashKey": "object:41"
+            },
+            {
+                "item": {
+                    "name": "Relish",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:17"
+                },
+                "change": 0,
+                "$$hashKey": "object:42"
+            },
+            {
+                "item": {
+                    "name": "Charcoal",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 1,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:18"
+                },
+                "change": 0,
+                "$$hashKey": "object:43"
+            }
+        ],
+        "$$hashKey": "object:29"
+    },
+    {
+        "timestamp": "8\/19\/2019, 10:54:34 AM",
+        "data": [
+            {
+                "item": {
+                    "name": "Beef Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-07-31T20:15:06.205Z",
+                            "type": "normal",
+                            "stock": 170
+                        },
+                        {
+                            "date": "2019-08-01T13:58:22.499Z",
+                            "type": "normal",
+                            "stock": 169
+                        }
+                    ],
+                    "$$hashKey": "object:6"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Chicken Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 168
+                        },
+                        {
+                            "date": "2019-08-19T14:54:34.603Z",
+                            "type": "normal",
+                            "stock": 167
+                        }
+                    ],
+                    "$$hashKey": "object:7"
+                },
+                "change": -1
+            },
+            {
+                "item": {
+                    "name": "Veggie Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 4,
+                    "packs_per_cooler": 16,
+                    "packs_per_box": 18,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 164
+                        }
+                    ],
+                    "$$hashKey": "object:8"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Hot Dog",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 39,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 6,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-19T14:54:32.944Z",
+                            "type": "normal",
+                            "stock": 168
+                        }
+                    ],
+                    "$$hashKey": "object:9"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Beyond Meat Burger",
+                    "supplier": "McGill",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        }
+                    ],
+                    "$$hashKey": "object:10"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Cheese",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 100,
+                    "packs_per_cooler": 10,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "25"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "23"
+                        }
+                    ],
+                    "$$hashKey": "object:11"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Hot Dog Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "50"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "48"
+                        }
+                    ],
+                    "$$hashKey": "object:12"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Burger Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "100"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "90"
+                        }
+                    ],
+                    "$$hashKey": "object:13"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Ketchup",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "10"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "9"
+                        }
+                    ],
+                    "$$hashKey": "object:14"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Mustard",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "5"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "4"
+                        }
+                    ],
+                    "$$hashKey": "object:15"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Mayo",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "4"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "3"
+                        }
+                    ],
+                    "$$hashKey": "object:16"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Relish",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:17"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Charcoal",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 1,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:18"
+                },
+                "change": 0
+            }
+        ]
+    },
+    {
+        "timestamp": "8\/19\/2019, 11:02:06 AM",
+        "data": [
+            {
+                "item": {
+                    "name": "Beef Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-07-31T20:15:06.205Z",
+                            "type": "normal",
+                            "stock": 170
+                        },
+                        {
+                            "date": "2019-08-01T13:58:22.499Z",
+                            "type": "normal",
+                            "stock": 169
+                        }
+                    ],
+                    "$$hashKey": "object:6"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Chicken Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 16,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 168
+                        },
+                        {
+                            "date": "2019-08-19T14:54:34.603Z",
+                            "type": "normal",
+                            "stock": 167
+                        },
+                        {
+                            "date": "2019-08-19T15:02:06.984Z",
+                            "type": "normal",
+                            "stock": 166
+                        }
+                    ],
+                    "$$hashKey": "object:7"
+                },
+                "change": -1
+            },
+            {
+                "item": {
+                    "name": "Veggie Burger",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 4,
+                    "packs_per_cooler": 16,
+                    "packs_per_box": 18,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-01T15:10:28.939Z",
+                            "type": "normal",
+                            "stock": 164
+                        }
+                    ],
+                    "$$hashKey": "object:8"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Hot Dog",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 39,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 6,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        },
+                        {
+                            "date": "2019-08-19T14:54:32.944Z",
+                            "type": "normal",
+                            "stock": 168
+                        }
+                    ],
+                    "$$hashKey": "object:9"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Beyond Meat Burger",
+                    "supplier": "McGill",
+                    "quantity_per_pack": 8,
+                    "packs_per_cooler": 12,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 1,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "200"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "180"
+                        }
+                    ],
+                    "$$hashKey": "object:10"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Cheese",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 100,
+                    "packs_per_cooler": 10,
+                    "packs_per_box": 12,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "25"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "23"
+                        }
+                    ],
+                    "$$hashKey": "object:11"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Hot Dog Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "50"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "48"
+                        }
+                    ],
+                    "$$hashKey": "object:12"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Burger Bun",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 24,
+                    "packs_per_cooler": 3,
+                    "packs_per_box": 10,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "100"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "90"
+                        }
+                    ],
+                    "$$hashKey": "object:13"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Ketchup",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "10"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "9"
+                        }
+                    ],
+                    "$$hashKey": "object:14"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Mustard",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 3,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "5"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "4"
+                        }
+                    ],
+                    "$$hashKey": "object:15"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Mayo",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "4"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "3"
+                        }
+                    ],
+                    "$$hashKey": "object:16"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Relish",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 3,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:17"
+                },
+                "change": 0
+            },
+            {
+                "item": {
+                    "name": "Charcoal",
+                    "supplier": "Provigo",
+                    "quantity_per_pack": 1,
+                    "packs_per_cooler": 1,
+                    "packs_per_box": 1,
+                    "price": 0,
+                    "volunteer_page": 0,
+                    "history": [
+                        {
+                            "date": "2019-08-25T04:00:00.000Z",
+                            "type": "delivery",
+                            "stock": "3"
+                        },
+                        {
+                            "date": "2019-08-25T13:00:00.000Z",
+                            "type": "normal",
+                            "stock": "2"
+                        }
+                    ],
+                    "$$hashKey": "object:18"
+                },
+                "change": 0
+            }
+        ]
+    }
+]

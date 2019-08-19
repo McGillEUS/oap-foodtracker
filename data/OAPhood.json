@@ -54,6 +54,16 @@
                 "date": "2019-08-01T15:10:28.939Z",
                 "type": "normal",
                 "stock": 168
+            },
+            {
+                "date": "2019-08-19T14:54:34.603Z",
+                "type": "normal",
+                "stock": 167
+            },
+            {
+                "date": "2019-08-19T15:02:06.984Z",
+                "type": "normal",
+                "stock": 166
             }
         ],
         "$$hashKey": "object:7"
@@ -103,6 +113,11 @@
                 "date": "2019-08-25T13:00:00.000Z",
                 "type": "normal",
                 "stock": "180"
+            },
+            {
+                "date": "2019-08-19T14:54:32.944Z",
+                "type": "normal",
+                "stock": 168
             }
         ],
         "$$hashKey": "object:9"
