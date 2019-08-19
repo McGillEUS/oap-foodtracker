@@ -132,12 +132,25 @@ app.controller('jsonGUIController', function($scope, $timeout) {
             return result;
         } else {
             var entries = [];
+            var foundValidEntry = false;
+            var itemBeforeTimeframe = {};
             angular.forEach(item.history, function(checkpoint) {
                 var checkpointDate = new Date(checkpoint.date);
                 if (checkpointDate > date && checkpoint.type == "normal") {
+                    // the first time we find a valid entry, flip the flag
+                    if (!foundValidEntry) {
+                        foundValidEntry = true;
+                    }
+
                     // get list of all changes resulting from normal operations
                         // i.e. deliveries are not included
                         entries.push(checkpoint);
+                }
+
+                // when the flag is still false, keep updating the last item
+                    // once it's true, stop updating it
+                if (!foundValidEntry) {
+                    itemBeforeTimeframe = checkpoint;
                 }
             });
 
@@ -146,7 +159,7 @@ app.controller('jsonGUIController', function($scope, $timeout) {
                 return result;
             } else {
                 // return the overall change in the time frame
-                return entries[0].stock - entries[entries.length - 1].stock;
+                return itemBeforeTimeframe.stock - entries[entries.length - 1].stock;
             }
         }
     };
