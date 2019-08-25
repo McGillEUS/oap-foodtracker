@@ -24,6 +24,11 @@
 	width: 20%;
 	padding: 10px;
 }
+.volunteer-input-column {
+	float: left;
+	width: 100%;
+	padding: 10px;
+}
 /* As the screen shrinks, decrease the number of input columns per row */
 @media screen and (max-width: 980px) {
 	.container {
