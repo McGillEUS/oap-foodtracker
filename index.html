@@ -33,7 +33,7 @@
     </div>
 
     <div class="row">
-      <div class="input-column" ng-repeat="item in food" ng-show="item.volunteer_page==1">
+      <div class="volunteer-input-column" ng-repeat="item in food" ng-show="item.volunteer_page==1">
         <h4 style="text-align:center">{{ item.name }}</h4>
         <button class="btn btn-success btn-medium input-column-item" ng-show="inputType=='delivery'||inputType=='inventory'" ng-click="stage($index, item.packs_per_box, 'take')">
           Receive Full Box ({{ item.packs_per_box }})
@@ -65,7 +65,7 @@
       </button>
     </div>
 
-    <h2>Change History</h2>
+    <!--h2>Change History</h2>
     <div class="row">
       <table id="food-inventory" class="table table-striped">
         <thead>
@@ -81,7 +81,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div-->
   </div>
   
   <script src="lib/jquery.min.js"></script>
